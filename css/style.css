@@ -1,0 +1,95 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --text-size--responsive: 62.5%; /* 1rem = 16px */
+
+  --text-size-default: 1.6rem;
+  --text-size-title: 2rem;
+
+  --color-primary: hsl(179, 62%, 43%);
+  --color-secondary: hsl(71, 73%, 54%);
+  --color-accent-light: hsl(204, 43%, 93%);
+  --color-accent-dark: hsl(218, 22%, 67%);
+
+  --text-family: 'Karla', sans-serif;;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: var(--text-size--responsive);
+}
+
+body {
+  font-family: var(--text-family);
+  font-size: var(--text-size-default);
+  background-image: var(--gradient-primary);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  padding: 6rem;
+}
+
+.container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+    
+
+    width: 55%;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.2);
+    overflow: hidden;
+}
+
+.join-community {
+    grid-column: 1 / -1;
+    padding: 4rem;
+}
+
+.join-community__title {
+    color: var(--color-primary);
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.join-community__subtitle {
+    color: var(--color-secondary);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.join-community__paragraph {
+    color: var(--color-accent-dark);
+    font-size: 1.6rem;
+    line-height: 1.7;
+}
+
+.monthly-sub {
+    background-color: var(--color-primary);
+}
+
+.why-us {
+    background-color: hsl(179, 62%, 53%);
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
