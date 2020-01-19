@@ -56,7 +56,12 @@ body {
 
 .join-community {
     grid-column: 1 / -1;
-    padding: 4rem;
+    padding: 4rem 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .join-community__title {
@@ -68,7 +73,7 @@ body {
 
 .join-community__subtitle {
     color: var(--color-secondary);
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
