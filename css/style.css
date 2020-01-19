@@ -10,7 +10,7 @@
   --text-size--responsive: 62.5%; /* 1rem = 16px */
 
   --text-size-default: 1.6rem;
-  --text-size-title: 2rem;
+  --text-size-title: 1.8rem;
 
   --color-primary: hsl(179, 62%, 43%);
   --color-secondary: hsl(71, 73%, 54%);
@@ -73,25 +73,78 @@ body {
 
 .join-community__subtitle {
     color: var(--color-secondary);
-    font-size: 1.8rem;
+    font-size: var(--text-size-title);
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .join-community__paragraph {
     color: var(--color-accent-dark);
-    font-size: 1.6rem;
+    font-size: var(--text-size-default);
     line-height: 1.7;
 }
 
 .monthly-sub {
     background-color: var(--color-primary);
+    color: var(--color-accent-light);
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 4rem;
+}
+
+.sub-heading {
+    font-size: var(--text-size-default);
+    margin-bottom: 2rem;
+}
+
+.monthly-sub__pricing {
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    
+    display: flex;
+    align-items: center;
+}
+
+.monthly-sub__pricing span {
+    color: var(--color-accent-light);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.monthly-sub__subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    font-family: var(--text-family);
+    padding: 1.2rem 2.8rem;
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,.2);
 }
 
 .why-us {
-    background-color: hsl(179, 62%, 53%);
+    background-color: hsl(179, 62%, 48%);
+    color: var(--color-accent-light);
+
+    display: flex;
+    flex-direction: column;
+    
+    padding: 4rem;
 }
 
+.why-us ul {
+    list-style: none;
+}
 
 
 
